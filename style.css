@@ -1,0 +1,85 @@
+
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+
+}
+nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: black;
+    margin: 0;
+    z-index: 2;
+    
+    
+}
+nav ul{
+    width: 100%;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding:0;
+}
+nav ul li{
+    text-align: center;
+    padding: 10px 50px;
+    
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    color: whitesmoke;
+    cursor: pointer;
+}
+nav ul li:hover{
+    background-color: whitesmoke;
+    color: black;
+}
+
+/*  end the nav  */
+
+/* start the header */
+header{
+    background-image: url('https://www.w3schools.com/w3images/coffeehouse.jpg');
+    width: 100%;
+    height: 80vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+}
+div.center{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    font-size: 4em;
+    font-weight: bold;
+    line-height: 1.4em;
+    letter-spacing: .1em;
+}
+div.bottomLeft{
+    position: absolute;
+    top: 95%;
+    left:1%;
+    padding:5px;
+    /* transform: translate(-50%,-50%); */
+    color: white;
+    background-color: black;
+    font-size: 1em;
+    letter-spacing: .1em;
+}
+div.bottomRight{
+    position: absolute;
+    top: 95%;
+    right:1%;
+    padding:5px;
+    font-weight: bold;
+    color: white;
+    font-size: 1em;
+    letter-spacing: .1em;
+}
