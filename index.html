@@ -9,10 +9,10 @@
 <body>
     <nav>
         <ul>
-            <li><a src="">Home</a></li>
-            <li><a src="">About</a></li>
-            <li><a src="">Menu</a></li>
-            <li><a src="">Where</a></li>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#menu">MENU</a></li>
+            <li><a href="#where">WHERE</a></li>
         </ul>
     </nav>
     <header>
@@ -23,7 +23,8 @@
     </header>
     <main>
         <div class="container">
-            <article class="about">
+            <div class="clickk" id="about"></div>
+            <article  class="about">
                 <h3><span>ABOUT THE CAFE</span></h3>
                 <p>The Cafe was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 <p>
@@ -36,22 +37,86 @@
                 <img src="https://www.w3schools.com/w3images/coffeeshop.jpg" alt="about cafe" width="700" height="400">
             </article>
 
-            <article class="minu">
+            <div class="clickk" id="menu"></div>
+            <article  class="menu">
                 <h3><span>THE MENU</span></h3>
                 <!-- section for choise -->
-                <section class="triggers">
-                    <div active=true class="trigger">Eat</div>
-                    <div class="trigger">Drink</div>
+                <section id="tr" class="triggers">
+                    <div onclick="trigger('eat')" id="tr1"  class="trigger  br">Eat</div>
+                    <div onclick="trigger('drink')" id="tr2" class="trigger ">Drink</div>
                 </section> 
+                
 
                 <!-- section for menus -->
-                <section >
-
+                <section id="eat" class="menu-container eat">
+                    <div class="item">
+                        <h4>Bread Basket</h4>
+                        <p>Assortment of fresh baked fruit breads and muffins 5.50</p>
+                    </div>
+                    <div class="item">
+                        <h4>Honey Almond Granola with Fruits</h4>
+                        <p>Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p>
+                    </div>
+                    <div class="item">
+                        <h4>Belgian Waffle</h4>
+                        <p>Vanilla flavored batter with malted flour 7.50</p>
+                    </div>
+                    <div class="item">
+                        <h4>Scrambled eggs</h4>
+                        <p>Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p>
+                    </div>
+                    <div class="item">
+                        <h4>Blueberry Pancakes</h4>
+                        <p>With syrup, butter and lots of berries 8.50</p>
+                    </div>
+                    
                 </section>
-                <img src="https://www.w3schools.com/w3images/coffeeshop.jpg" alt="about cafe" width="700" height="400">
+                <section id="drink" class="menu-container drink">
+                    <div class="item">
+                        <h4>Coffee</h4>
+                        <p>Regular coffee 2.50</p>
+                    </div>
+                    <div class="item">
+                        <h4>Chocolato</h4>
+                        <p>Chocolate espresso with milk 4.50</p>
+                    </div>
+                    <div class="item">
+                        <h4>Corretto</h4>
+                        <p>Whiskey and coffee 5.00</p>
+                    </div>
+                    <div class="item">
+                        <h4>Iced tea</h4>
+                        <p>Hot tea, except not hot 3.00</p>
+                    </div>
+                    <div class="item">
+                        <h4>Soda</h4>
+                        <p>Coke, Sprite, Fanta, etc. 2.50</p>
+                    </div>
+                </section>
+                <img src="https://www.w3schools.com/w3images/coffeehouse2.jpg" alt="about cafe" width="700" height="400">
+            </article>
+
+            <div class="clickk" id="where"></div>
+            <article  class="where">
+                <h3><span>WHERE TO FIND US</span></h3>
+                <p class="light">Find us at some address at some place.</p>
+                <img src="https://www.w3schools.com/w3images/map.jpg" alt="map">
+                <p><span>FYI!</span>  We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste.</p>
+                <p><strong>Reserve </strong> a table, ask for today's special or just send us a message:</p>
+                <form action="">
+                    <input type="text" placeholder="Name" required><br>
+                    <input type="number" placeholder="How many people" required><br>
+                    <input type="datetime-local" value="2020-12-31T20:30" required><br>
+                    <input type="text" placeholder="Message \ Special requirements" required><br>
+                    <button>SEND MESSAGE</button>
+                </form>
             </article>
         </div>        
     </main>
+    <footer>
+        <h4>Powered by Mohamad Saad Eddin <strong>&copy;</strong></h4>
+        <h5><a href="https://github.com/MHD22">GitHub</a></h5>
+    </footer>
 
     <script src="script.js"></script>
 </body>

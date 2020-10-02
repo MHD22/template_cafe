@@ -6,7 +6,7 @@ body{
     margin: 0;
     padding: 0;
     font-family: 'Piazzolla', serif;
-    
+    background-color: rgba(226, 222, 222, 0.815);
     word-spacing: 3px;
 
 }
@@ -15,8 +15,8 @@ nav {
     width: 100%;
     top: 0;
     background-color: black;
-    margin: 0;
-    z-index: 2;
+    margin-bottom: 20px;
+    z-index: 1;
     
     
 }
@@ -39,8 +39,13 @@ nav ul li{
     cursor: pointer;
 }
 nav ul li:hover{
-    background-color: whitesmoke;
+    background-color: rgb(216, 208, 208);
     color: black;
+    font-weight: bold;
+}
+nav a{
+    text-decoration: none;
+    color: inherit;
 }
 
 /*  end the nav  */
@@ -101,6 +106,9 @@ main{
 
 
 }
+.clickk{
+    margin-bottom: 25px;
+}
 .container{
     width: 700px;
     
@@ -110,8 +118,9 @@ main{
 
 }
 article{
+    width: 100%;
     margin-top: 30px;
-    margin-bottom: 200px;
+    margin-bottom: 100px;
 }
 
 h3{
@@ -127,8 +136,8 @@ h3 span{
     
 }
 .blockq {
-    background: #f9f9f9;
-    border-left: 6px solid #ccc;
+    background-color: rgba(202, 198, 198, 0.747);
+    border-left: 6px solid rgba(104, 102, 102, 0.897);
     margin: 1.5em 0px;
     padding: 0.5em 10px;
     }
@@ -142,6 +151,9 @@ P {
     display:flex;
     justify-content: center;
     align-items: center;
+    background-color: rgba(226, 222, 222, 0.815);
+    
+    box-shadow: 0 2px 4px 2px  rgba(0, 0, 0, 0.164) ;
 }
 .trigger{
     display:inline-block;
@@ -149,24 +161,122 @@ P {
     text-align: center;
     font-size: 1.5em;
     cursor: pointer;
+    margin-bottom: 0;
+    padding: 0;
+    
 }
-.trigger:hover{
+.br {
+    border-right: 0.5px solid gray ;
+}
+
+
+.trigger {
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+}
+.trigger:active , .trigger:focus{
     background-color: rgba(48, 47, 47, 0.856);
-    color: white;
+    color: whitesmoke;
 }
-.trigger:active{
+.active{
     background-color: rgba(48, 47, 47, 0.856);
-    color: white;
+    color: whitesmoke;
 }
 
+.menu-container{
+    padding: 8px;
+    margin-top: 2px;
+    background-color: rgba(226, 222, 222, 0.815);
+    box-shadow: 0 2px 5px 4px  rgba(0, 0, 0, 0.137) ;
+
+}
+.drink{
+    display: none;
+}
+.item{
+    margin-bottom: 70px;
+}
+.item h4{
+    font-size: 1.2em;
+    filter: opacity(80%);
+}
+.item p{
+   filter: opacity(80%);
+}
+/* end the article 2 */
+
+/* start the third article */
+.where p.light{
+    width: 100%;
+    text-align: left;
+    filter: opacity(80%);
+}
+.where p span{
+    background-color: black;
+    color: white;
+    padding: 0px 7px;
+}
+strong{
+    font-size: 1.2em;
+}
+input{
+    width: 100%;
+    height: 70px;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 1.1em;
+}
+button{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    font-size: 1.1em;
+    margin-top: 15px;
+    cursor: pointer;
+    outline: none;
+}
+button:hover{
+    background-color: rgba(170, 167, 167, 0.897);
+    color: black;
+    outline: none;
+}
+button:active{
+    transform: translateY(3px);
+}
+
+/* end of main */
 
 
-
-
+/* footer */
+footer{
+    width: 100%;
+    height: 200px;
+    background-color: rgba(199, 195, 195, 0.63);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 2px 3px gray;
+}
+footer a{
+    color: rgba(88, 4, 4, 0.877);
+    font-size: 1.8em;
+    padding: 3px;
+}
+footer a:hover{
+    background-color: rgba(80, 26, 26, 0.651);
+    color: rgb(0, 0, 66);
+}
+footer h5{
+    margin-top: 0;
+}
 
 
 
 img{
     filter: grayscale(80%) !important;
     margin-top: 20px;
+    width: 100%;
 }
